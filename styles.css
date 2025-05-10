@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .banner {
+    background-image: url('https://www.ajslocation974.com/wp-content/uploads/2022/11/banniere-location-voiture-reunion.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+  }
+  
+  .banner-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  
