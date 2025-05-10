@@ -26,3 +26,15 @@ function scrollCarousel(direction) {
 setInterval(() => {
   scrollCarousel(1);
 }, 3000);
+
+// Localisation 
+
+function showLocation(index) {
+  const tabs = document.querySelectorAll(".location-tab");
+  const maps = document.querySelectorAll(".map-frame");
+
+  tabs.forEach((tab, i) => {
+    tab.classList.toggle("active", i === index);
+    maps[i].classList.toggle("active", i === index);
+  });
+}
