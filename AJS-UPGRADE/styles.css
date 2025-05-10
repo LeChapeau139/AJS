@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.top-bar {
+  background: #2f855a;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1vh 2vw;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.main-header {
+  height: 80vh;
+  background: url('assets/waterfall.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-box {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 4vh 4vw;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  max-width: 90vw;
+}
+
+.header-box h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 0;
+}
+
+.header-box p {
+  margin-top: 1.5vh;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  margin: 2vh 0;
+}
+
+.tab {
+  padding: 1vh 2vw;
+  border: 2px solid #2f855a;
+  background: white;
+  color: #2f855a;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.tab.active, .tab:hover {
+  background: #2f855a;
+  color: white;
+}
+
+.search-form {
+  background: #d1fae5;
+  max-width: 90vw;
+  margin: 4vh auto;
+  padding: 3vh 3vw;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.search-form h2 {
+  margin-bottom: 2vh;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1vw;
+  margin-top: 30px;
+}
+
+.search-form select,
+.search-form input,
+.search-btn {
+  padding: 1vh;
+  border: 2px solid #2f855a;
+  border-radius: 0.5rem;
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+}
+
+.search-btn {
+  background: #2f855a;
+  color: white;
+  cursor: pointer;
+}
+
+.car-gallery {
+  max-width: 95vw;
+  margin: 6vh auto;
+  padding: 2vh 2vw;
+}
+
+.car-gallery h2 {
+  text-align: center;
+  margin-bottom: 4vh;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2vw;
+}
+
+.car-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  min-width: 200px;
+  max-width: 220px;
+  flex: 0 0 auto;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.car-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.car-separator {
+  border: none;
+  height: 2px;
+  background-color: #2f855a;
+  margin: 0.5rem auto;
+  width: 60%;
+}
+
+.car-price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  padding: 0 0.2rem;
+}
+
+.car-subtitle {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.car-price {
+  font-size: 1.5rem;
+  color: #2f855a;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; /* centre le carousel dans la page */
+  padding: 0 2rem; /* marges à gauche et à droite */
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-padding: 0 2rem; /* pour bien scroller sans coller les bords */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2f855a;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #00b63c;
+}
+
+.carousel-btn.left {
+  left: 0.5rem;
+}
+
+.carousel-btn.right {
+  right: 0.5rem;
+}
